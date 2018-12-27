@@ -14,3 +14,9 @@ Hadoop supports the following compression types and codecs:
 * LZO - com.hadoop.compression.lzo.LzopCodec
 * Snappy - org.apache.hadoop.io.compress.SnappyCodec
 * Deflate - org.apache.hadoop.io.compress.DeflateCodec
+
+
+
+
+
+
