@@ -18,7 +18,11 @@ Deflate - org.apache.hadoop.io.compress.DeflateCodec
 ```
 
 * GZIP compression uses more CPU resources than Snappy or LZO, but provides a higher compression ratio. GZip is often a good choice for cold data, which is accessed infrequently. Snappy or LZO are a better choice for hot data, which is accessed frequently.
-> 
+
+
+-----
+
+
 * BZip2 can also produce more compression than GZip for some types of files, at the cost of some speed when compressing and decompressing. HBase does not support BZip2 compression.
 
 
