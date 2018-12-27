@@ -30,6 +30,13 @@ mapreduce.map.output.compression.codec=org.apache.hadoop.io.compress.SnappyCodec
 mapreduce.output.compress=true
 mapreduce.output.compression.codec=org.apache.hadoop.io.compress.SnappyCodec
 ```
+#MRv1
+```
+mapred.compress.map.output=true
+mapred.map.output.compression.codec=org.apache.hadoop.io.compress.GzipCodec
+mapred.output.compress=true
+mapred.output.compression.codec=org.apache.hadoop.io.compress.GzipCodec
+```
 
 
 
