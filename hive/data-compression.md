@@ -9,7 +9,7 @@
 # Compression Types
 Hadoop supports the following compression types and codecs:
 
-```javascript
+```
 gzip - org.apache.hadoop.io.compress.GzipCodec
 bzip2 - org.apache.hadoop.io.compress.BZip2Codec
 LZO - com.hadoop.compression.lzo.LzopCodec
