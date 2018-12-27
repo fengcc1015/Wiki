@@ -23,8 +23,13 @@ Deflate - org.apache.hadoop.io.compress.DeflateCodec
 * For MapReduce, if you need your compressed data to be splittable, BZip2 and LZO formats can be split. Snappy and GZip blocks are not splittable, but files with Snappy blocks inside a container file format such as SequenceFile or Avro can be split. Snappy is intended to be used with a container format, like SequenceFiles or Avro data files, rather than being used directly on plain text, for example, since the latter is not splittable and cannot be processed in parallel using MapReduce. Splittability is not relevant to HBase data.
 * For MapReduce, you can compress either the intermediate data, the output, or both. Adjust the parameters you provide for the MapReduce job accordingly. The following examples compress both the intermediate data and the output. MR2 is shown first, followed by MR1.
 
-
-
+# MRv2
+```
+mapreduce.compress.map.output=true
+mapreduce.map.output.compression.codec=org.apache.hadoop.io.compress.SnappyCodec
+mapreduce.output.compress=true
+mapreduce.output.compression.codec=org.apache.hadoop.io.compress.SnappyCodec
+```
 
 
 
